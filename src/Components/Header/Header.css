@@ -1,0 +1,15 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+a {
+  color: rgb(62, 74, 204);
+  font-weight: bold;
+}
+
+.active {
+  color: rgb(85, 30, 156);
+}
