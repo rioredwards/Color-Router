@@ -5,9 +5,15 @@ import './Header.css';
 export default function Header() {
   return (
     <header>
-      <NavLink to="/rgb/255/0/0">Red</NavLink>
-      <NavLink to="/rgb/255/0/255">Purple</NavLink>
-      <NavLink to="/rgb/255/255/0">Yellow</NavLink>
+      <NavLink className={(isActive) => `${isActive ? 'active' : ''}`} to="/rgb/255/0/0">
+        Red
+      </NavLink>
+      <NavLink className={(isActive) => `${isActive ? 'active' : ''}`} to="/rgb/255/0/255">
+        Purple
+      </NavLink>
+      <NavLink className={(isActive) => `${isActive ? 'active' : ''}`} to="/rgb/255/255/0">
+        Yellow
+      </NavLink>
     </header>
   );
 }

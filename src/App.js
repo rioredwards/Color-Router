@@ -2,6 +2,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './Components/Header/Header.js';
 import RGB from './Components/RGB/RGB.js';
 import './app.css';
+import NotFound from './Components/NotFound/NotFound.js';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/rgb/:r/:g/:b" component={RGB} />
+        <Route path="/" component={NotFound} />
       </Switch>
     </main>
   );
